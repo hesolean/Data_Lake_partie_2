@@ -5,7 +5,7 @@
     "key_vault_url": "https://hdkeysvault.vault.azure.net/",
     "secret_name": "hdserviceprincipal2emecree",
     "client_id_sp1": "21c67a4d-2f9e-4c96-9e3f-f34c965084f3",
-    "client_secret_sp1": "",
+    "client_secret_sp1": "NeT8Q~Ir72SNMGh-QtiojAonD1Dghd4aj2tfrb4M",
     "blob_storage_url": "https://hdubourgstockage.blob.core.windows.net/",
     "container_name": "rbnb",
     "local_file_path": "/home/helene/Documents/Brief Azure Data Lake 2/essai Rbnb.csv",
