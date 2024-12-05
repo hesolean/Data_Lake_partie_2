@@ -20,7 +20,7 @@
 					"authentication": {
 						"type": "ServicePrincipal",
 						"userTenant": "a2e466aa-4f86-4545-b5b8-97da7c8febf3",
-						"username": "3b746a64-6aa7-4411-a28d-9cbe3e27f6e8",
+						"username": "21c67a4d-2f9e-4c96-9e3f-f34c965084f3",
 						"resource": "https://management.azure.com/",
 						"password": {
 							"type": "AzureKeyVaultSecret",
