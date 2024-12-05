@@ -35,7 +35,7 @@
 			},
 			{
 				"name": "Response",
-				"type": "AppendVariable",
+				"type": "SetVariable",
 				"dependsOn": [
 					{
 						"activity": "Connexion au site rbnb",
@@ -44,11 +44,15 @@
 						]
 					}
 				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "Response",
 					"value": {
-						"value": "@activity('Connexion au site rbnb').output.Response",
+						"value": "@activity('Connexion au site rbnb').output.response",
 						"type": "Expression"
 					}
 				}
