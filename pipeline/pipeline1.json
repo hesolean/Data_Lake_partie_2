@@ -54,6 +54,11 @@
 				}
 			}
 		],
+		"variables": {
+			"Response": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
