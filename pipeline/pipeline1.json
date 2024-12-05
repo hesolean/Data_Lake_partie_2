@@ -1,0 +1,39 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Connexion au site rbnb",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "GET",
+					"url": "https://insideairbnb.com/get-the-data/",
+					"authentication": {
+						"type": "ServicePrincipal",
+						"userTenant": "a2e466aa-4f86-4545-b5b8-97da7c8febf3",
+						"username": "3b746a64-6aa7-4411-a28d-9cbe3e27f6e8",
+						"resource": "https://management.azure.com/",
+						"password": {
+							"type": "AzureKeyVaultSecret",
+							"store": {
+								"referenceName": "AzureKeyVault2",
+								"type": "LinkedServiceReference"
+							},
+							"secretName": "hdserviceprincipal2emecree"
+						}
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}
