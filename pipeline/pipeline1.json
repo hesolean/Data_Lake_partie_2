@@ -32,6 +32,26 @@
 						}
 					}
 				}
+			},
+			{
+				"name": "Response",
+				"type": "AppendVariable",
+				"dependsOn": [
+					{
+						"activity": "Connexion au site rbnb",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Response",
+					"value": {
+						"value": "@activity('Connexion au site rbnb').output.Response",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"annotations": []
