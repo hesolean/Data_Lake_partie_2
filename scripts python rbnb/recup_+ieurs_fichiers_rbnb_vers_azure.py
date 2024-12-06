@@ -75,7 +75,7 @@ for h3_tag in soup.find_all('h3'):
                     if '.csv' in a_tag['href']:
                         temp_file_links.append(a_tag['href'])
                         print(f"Lien ajouté : {a_tag['href']} sous '{h3_tag.text.strip()}'")
-                break  # Arrêtez après avoir trouvé la table liée à cet h3
+                #break  # Arrêtez après avoir trouvé la table liée à cet h3
 
         # Ajouter les fichiers trouvés pour cet h3 à la liste principale
         file_links.extend(temp_file_links)
